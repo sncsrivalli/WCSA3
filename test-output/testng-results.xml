@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-17T15:52:28 IST" name="Default suite" finished-at="2022-12-17T15:52:56 IST" duration-ms="28799">
+  <suite started-at="2022-12-19T15:46:55 IST" name="Default suite" finished-at="2022-12-19T15:47:14 IST" duration-ms="18951">
     <groups>
     </groups>
-    <test started-at="2022-12-17T15:52:28 IST" name="Default test" finished-at="2022-12-17T15:52:56 IST" duration-ms="28799">
-      <class name="synchronization.FluentWaitPractice">
-        <test-method signature="demo()[pri:0, instance:synchronization.FluentWaitPractice@47987356]" started-at="2022-12-17T15:52:28 IST" name="demo" finished-at="2022-12-17T15:52:56 IST" duration-ms="28736" status="PASS">
+    <test started-at="2022-12-19T15:46:55 IST" name="Default test" finished-at="2022-12-19T15:47:14 IST" duration-ms="18951">
+      <class name="javascriptExecutor.PassDataAndClickElement">
+        <test-method signature="demo()[pri:0, instance:javascriptExecutor.PassDataAndClickElement@47987356]" started-at="2022-12-19T15:46:55 IST" name="demo" finished-at="2022-12-19T15:47:14 IST" duration-ms="18899" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demo -->
-      </class> <!-- synchronization.FluentWaitPractice -->
+      </class> <!-- javascriptExecutor.PassDataAndClickElement -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
