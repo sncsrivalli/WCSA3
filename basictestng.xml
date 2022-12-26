@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- BeforeSuite runs here -->
+<suite name="Suite">
+	<!-- BeforeTest runs here -->
+	<test thread-count="5" name="Test">
+		<classes>
+			<!-- BeforeClass runs here -->
+			<class name="testNG.FirstTest">
+				<methods>
+				    <!-- BeforeMethod runs here -->
+					<include name="first1Test"></include>
+					<!-- AfterMethod runs here -->
+					<!-- BeforeMethod runs here -->
+					<include name="first2Test"></include>
+					<!-- AfterMethod runs here -->
+				</methods>
+			</class>
+			<!-- AfterClass runs here -->
+			
+		</classes>
+	</test> <!-- Test -->
+	<!-- AfterTest runs here -->
+</suite> <!-- Suite -->
+<!-- AfterSuite runs here -->
