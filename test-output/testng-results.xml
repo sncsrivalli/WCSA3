@@ -1,17 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="5" total="9" passed="4" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Third2 test]]>
+    </line>
+    <line>
+      <![CDATA[First2 test]]>
+    </line>
+    <line>
+      <![CDATA[First3 test]]>
+    </line>
+    <line>
+      <![CDATA[Second2 test]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-12-20T15:30:22 IST" name="Default suite" finished-at="2022-12-20T15:30:34 IST" duration-ms="12034">
+  <suite started-at="2022-12-27T15:59:19 IST" name="Suite" finished-at="2022-12-27T15:59:19 IST" duration-ms="93">
     <groups>
+      <group name="Sanity">
+        <method signature="FirstTest.first2Test()[pri:0, instance:groupExecution.FirstTest@485966cc]" name="first2Test" class="groupExecution.FirstTest"/>
+        <method signature="FirstTest.first3Test()[pri:0, instance:groupExecution.FirstTest@485966cc]" name="first3Test" class="groupExecution.FirstTest"/>
+        <method signature="SecondTest.second2Test()[pri:0, instance:groupExecution.SecondTest@593aaf41]" name="second2Test" class="groupExecution.SecondTest"/>
+        <method signature="ThirdTest.third2Test()[pri:0, instance:groupExecution.ThirdTest@614ca7df]" name="third2Test" class="groupExecution.ThirdTest"/>
+      </group> <!-- Sanity -->
+      <group name="Smoke">
+        <method signature="FirstTest.first3Test()[pri:0, instance:groupExecution.FirstTest@485966cc]" name="first3Test" class="groupExecution.FirstTest"/>
+        <method signature="ThirdTest.third2Test()[pri:0, instance:groupExecution.ThirdTest@614ca7df]" name="third2Test" class="groupExecution.ThirdTest"/>
+      </group> <!-- Smoke -->
+      <group name="System">
+        <method signature="ThirdTest.third2Test()[pri:0, instance:groupExecution.ThirdTest@614ca7df]" name="third2Test" class="groupExecution.ThirdTest"/>
+      </group> <!-- System -->
     </groups>
-    <test started-at="2022-12-20T15:30:22 IST" name="Default test" finished-at="2022-12-20T15:30:34 IST" duration-ms="12034">
-      <class name="chromeoptions.AllowMediaAccess">
-        <test-method signature="demo()[pri:0, instance:chromeoptions.AllowMediaAccess@47987356]" started-at="2022-12-20T15:30:22 IST" name="demo" finished-at="2022-12-20T15:30:34 IST" duration-ms="11980" status="PASS">
+    <test started-at="2022-12-27T15:59:19 IST" name="Test" finished-at="2022-12-27T15:59:19 IST" duration-ms="93">
+      <class name="groupExecution.ThirdTest">
+        <test-method signature="third2Test()[pri:0, instance:groupExecution.ThirdTest@614ca7df]" started-at="2022-12-27T15:59:19 IST" name="third2Test" finished-at="2022-12-27T15:59:19 IST" duration-ms="11" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Third2 test]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- demo -->
-      </class> <!-- chromeoptions.AllowMediaAccess -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- third2Test -->
+      </class> <!-- groupExecution.ThirdTest -->
+      <class name="groupExecution.SecondTest">
+        <test-method signature="second2Test()[pri:0, instance:groupExecution.SecondTest@593aaf41]" started-at="2022-12-27T15:59:19 IST" name="second2Test" finished-at="2022-12-27T15:59:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Second2 test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- second2Test -->
+      </class> <!-- groupExecution.SecondTest -->
+      <class name="groupExecution.FirstTest">
+        <test-method signature="first2Test()[pri:0, instance:groupExecution.FirstTest@485966cc]" started-at="2022-12-27T15:59:19 IST" name="first2Test" finished-at="2022-12-27T15:59:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[First2 test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- first2Test -->
+        <test-method signature="first3Test()[pri:0, instance:groupExecution.FirstTest@485966cc]" started-at="2022-12-27T15:59:19 IST" name="first3Test" finished-at="2022-12-27T15:59:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[First3 test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- first3Test -->
+      </class> <!-- groupExecution.FirstTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
