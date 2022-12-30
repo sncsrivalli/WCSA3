@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="crossBrowserParallel.Test1">
+      <class name="retryAnalyzer.RetryPractice">
         <methods>
-          <include name="demo"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- crossBrowserParallel.Test1 -->
+      </class> <!-- retryAnalyzer.RetryPractice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

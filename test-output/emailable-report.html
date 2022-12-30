@@ -9,20 +9,25 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">test3</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">26,628</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">test1</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">28,679</td><td></td><td></td></tr>
-<tr><td><a href="#t2">test2</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">39,895</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">6</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">95,202</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num attn">1</td><td class="num">91</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">test3 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">crossBrowserParallel.Test1</td><td><a href="#m0">demo</a></td><td rowspan="1">1672222808539</td><td rowspan="1">16551</td></tr><tr class="passedodd"><td rowspan="1">crossBrowserParallel.Test2</td><td><a href="#m1">demo</a></td><td rowspan="1">1672222825099</td><td rowspan="1">10011</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">crossBrowserParallel.Test1</td><td><a href="#m2">demo</a></td><td rowspan="1">1672222808539</td><td rowspan="1">21783</td></tr><tr class="passedodd"><td rowspan="1">crossBrowserParallel.Test2</td><td><a href="#m3">demo</a></td><td rowspan="1">1672222830324</td><td rowspan="1">6840</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">test2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">crossBrowserParallel.Test1</td><td><a href="#m4">demo</a></td><td rowspan="1">1672222808539</td><td rowspan="1">25432</td></tr><tr class="passedodd"><td rowspan="1">crossBrowserParallel.Test2</td><td><a href="#m5">demo</a></td><td rowspan="1">1672222833976</td><td rowspan="1">14404</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">retryAnalyzer.RetryWithXML</td><td><a href="#m0">demo</a></td><td rowspan="1">1672394380006</td><td rowspan="1">2</td></tr><tr><th colspan="4">Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="3">retryAnalyzer.RetryWithXML</td><td><a href="#m1">demo</a></td><td rowspan="3">1672394380001</td><td rowspan="3">1</td></tr><tr class="retriedeven"><td><a href="#m2">demo</a></td></tr><tr class="retriedeven"><td><a href="#m3">demo</a></td></tr></tbody>
 </table>
-<h2>test3</h2><h3 id="m0">crossBrowserParallel.Test1#demo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>edge</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">crossBrowserParallel.Test2#demo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>edge</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>test1</h2><h3 id="m2">crossBrowserParallel.Test1#demo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">crossBrowserParallel.Test2#demo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>test2</h2><h3 id="m4">crossBrowserParallel.Test1#demo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">crossBrowserParallel.Test2#demo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">retryAnalyzer.RetryWithXML#demo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at retryAnalyzer.RetryWithXML.demo(RetryWithXML.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">retryAnalyzer.RetryWithXML#demo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at retryAnalyzer.RetryWithXML.demo(RetryWithXML.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">retryAnalyzer.RetryWithXML#demo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at retryAnalyzer.RetryWithXML.demo(RetryWithXML.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">retryAnalyzer.RetryWithXML#demo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at retryAnalyzer.RetryWithXML.demo(RetryWithXML.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

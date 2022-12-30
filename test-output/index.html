@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\WCSA3\crossBrowsertestng.xml</span>
+                    <span>D:\WCSA3\retryAnalyzertestng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,46 +93,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,  3 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="crossBrowserParallel.Test1" class="method navigator-link" hash-for-method="demo(edge)">demo(edge)</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="retryAnalyzer.RetryWithXML" class="method navigator-link" hash-for-method="demo">demo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="retryAnalyzer.RetryWithXML" class="method navigator-link" hash-for-method="demo">demo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="crossBrowserParallel.Test2" class="method navigator-link" hash-for-method="demo(edge)">demo(edge)</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="retryAnalyzer.RetryWithXML" class="method navigator-link" hash-for-method="demo">demo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="crossBrowserParallel.Test2" class="method navigator-link" hash-for-method="demo(chrome)">demo(chrome)</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="retryAnalyzer.RetryWithXML" class="method navigator-link" hash-for-method="demo">demo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="crossBrowserParallel.Test1" class="method navigator-link" hash-for-method="demo(chrome)">demo(chrome)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="crossBrowserParallel.Test1" class="method navigator-link" hash-for-method="demo(firefox)">demo(firefox)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="crossBrowserParallel.Test2" class="method navigator-link" hash-for-method="demo(firefox)">demo(firefox)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -144,101 +143,88 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">crossBrowserParallel.Test2</span>
+              <img src="failed.png"/>
+              <span class="class-name">retryAnalyzer.RetryWithXML</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="demo(edge)">
-                  </a> <!-- demo(edge) -->
+                  <a name="demo">
+                  </a> <!-- demo -->
                   <span class="method-name">demo</span>
-                  <span class="parameters">(edge)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="demo(chrome)">
-                  </a> <!-- demo(chrome) -->
-                  <span class="method-name">demo</span>
-                  <span class="parameters">(chrome)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="demo(firefox)">
-                  </a> <!-- demo(firefox) -->
-                  <span class="method-name">demo</span>
-                  <span class="parameters">(firefox)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at retryAnalyzer.RetryWithXML.demo(RetryWithXML.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">crossBrowserParallel.Test1</span>
+              <img src="skipped.png"/>
+              <span class="class-name">retryAnalyzer.RetryWithXML</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="demo(edge)">
-                  </a> <!-- demo(edge) -->
+                  <a name="demo">
+                  </a> <!-- demo -->
                   <span class="method-name">demo</span>
-                  <span class="parameters">(edge)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at retryAnalyzer.RetryWithXML.demo(RetryWithXML.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="demo(chrome)">
-                  </a> <!-- demo(chrome) -->
+                  <a name="demo">
+                  </a> <!-- demo -->
                   <span class="method-name">demo</span>
-                  <span class="parameters">(chrome)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at retryAnalyzer.RetryWithXML.demo(RetryWithXML.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="demo(firefox)">
-                  </a> <!-- demo(firefox) -->
+                  <a name="demo">
+                  </a> <!-- demo -->
                   <span class="method-name">demo</span>
-                  <span class="parameters">(firefox)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at retryAnalyzer.RetryWithXML.demo(RetryWithXML.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\WCSA3\crossBrowsertestng.xml</span>
+            <span class="header-content">D:\WCSA3\retryAnalyzertestng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;test1&quot;&gt;
-    &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;genericUtility.RetryToListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;crossBrowserParallel.Test1&quot;/&gt;
-      &lt;class name=&quot;crossBrowserParallel.Test2&quot;/&gt;
+      &lt;class name=&quot;retryAnalyzer.RetryWithXML&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- test1 --&gt;
-  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;test2&quot;&gt;
-    &lt;parameter name=&quot;Browser&quot; value=&quot;firefox&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;crossBrowserParallel.Test1&quot;/&gt;
-      &lt;class name=&quot;crossBrowserParallel.Test2&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- test2 --&gt;
-  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;test3&quot;&gt;
-    &lt;parameter name=&quot;Browser&quot; value=&quot;edge&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;crossBrowserParallel.Test1&quot;/&gt;
-      &lt;class name=&quot;crossBrowserParallel.Test2&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- test3 --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -250,13 +236,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">test1 (2 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">test2 (2 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">test3 (2 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -282,36 +262,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'demo')
-data.setCell(0, 2, 'crossBrowserParallel.Test1')
-data.setCell(0, 3, 25432);
+data.setCell(0, 2, 'retryAnalyzer.RetryWithXML')
+data.setCell(0, 3, 16);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'demo')
-data.setCell(1, 2, 'crossBrowserParallel.Test1')
-data.setCell(1, 3, 21783);
+data.setCell(1, 2, 'retryAnalyzer.RetryWithXML')
+data.setCell(1, 3, 2);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'demo')
-data.setCell(2, 2, 'crossBrowserParallel.Test1')
-data.setCell(2, 3, 16551);
+data.setCell(2, 2, 'retryAnalyzer.RetryWithXML')
+data.setCell(2, 3, 2);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'demo')
-data.setCell(3, 2, 'crossBrowserParallel.Test2')
-data.setCell(3, 3, 14404);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'demo')
-data.setCell(4, 2, 'crossBrowserParallel.Test2')
-data.setCell(4, 3, 10011);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'demo')
-data.setCell(5, 2, 'crossBrowserParallel.Test2')
-data.setCell(5, 3, 6840);
+data.setCell(3, 2, 'retryAnalyzer.RetryWithXML')
+data.setCell(3, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 39 seconds</span>
+              <span class="suite-total-time">Total running time: 21 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -337,33 +309,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">crossBrowserParallel.Test1</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">retryAnalyzer.RetryWithXML</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">demo(chrome)</span>
+                <span class="method-name">demo</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">demo(firefox)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">demo</span>
+                <span class="method-start">23 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">demo(edge)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">crossBrowserParallel.Test2</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">demo(edge)</span>
-                <span class="method-start">16560 ms</span>
+                <span class="method-name">demo</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">demo(chrome)</span>
-                <span class="method-start">21785 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">demo(firefox)</span>
-                <span class="method-start">25437 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">demo</span>
+                <span class="method-start">35 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
