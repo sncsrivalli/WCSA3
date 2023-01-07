@@ -8,23 +8,65 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
+	<profiles>
+		<profile>
+			<id>BatchExecution</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.0.0-M7</version>
+						<configuration>
+							<suiteXmlFiles>
+								<suiteXmlFile>batchExecutiontestng.xml</suiteXmlFile>
+							</suiteXmlFiles>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
 
-	<build>
+		</profile>
+		
+		<profile>
+			<id>GroupExecution</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.0.0-M7</version>
+						<configuration>
+							<suiteXmlFiles>
+								<suiteXmlFile>groupExecutiontestng.xml</suiteXmlFile>
+							</suiteXmlFiles>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
 
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M7</version>
-				<configuration>
-					<suiteXmlFiles>
-						<suiteXmlFile>mavenCMDparametertestng.xml</suiteXmlFile>
-					</suiteXmlFiles>
-				</configuration>
-			</plugin>
-		</plugins>
+		</profile>
+		
+		<profile>
+			<id>DistributedParallel</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.0.0-M7</version>
+						<configuration>
+							<suiteXmlFiles>
+								<suiteXmlFile>distributedParalleltestng.xml</suiteXmlFile>
+							</suiteXmlFiles>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
 
-	</build>
+		</profile>
+	</profiles>
+
 
 	<dependencies>
 

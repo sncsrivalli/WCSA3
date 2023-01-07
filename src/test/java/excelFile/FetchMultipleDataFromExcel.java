@@ -17,7 +17,7 @@ public class FetchMultipleDataFromExcel {
 		
 		Sheet sheet = wb.getSheet("Sheet1");
 		//DataFormatter df = new DataFormatter();
-		
+
 //		System.out.println(sheet.getLastRowNum());
 //		System.out.println(sheet.getRow(0).getLastCellNum());
 		String[][] arr = new String[sheet.getLastRowNum()+1][sheet.getRow(2).getLastCellNum()];
