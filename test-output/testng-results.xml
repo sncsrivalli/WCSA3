@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-11T06:58:03 IST" name="Default suite" finished-at="2023-01-11T06:58:09 IST" duration-ms="5518">
+  <suite started-at="2023-01-13T16:26:47 IST" name="Default suite" finished-at="2023-01-13T16:27:03 IST" duration-ms="15696">
     <groups>
     </groups>
-    <test started-at="2023-01-11T06:58:03 IST" name="Default test" finished-at="2023-01-11T06:58:09 IST" duration-ms="5518">
-      <class name="javascriptExecutor.HandlingDisabledElement">
-        <test-method signature="demo()[pri:0, instance:javascriptExecutor.HandlingDisabledElement@47987356]" started-at="2023-01-11T06:58:03 IST" name="demo" finished-at="2023-01-11T06:58:08 IST" duration-ms="5478" status="PASS">
+    <test started-at="2023-01-13T16:26:47 IST" name="Default test" finished-at="2023-01-13T16:27:03 IST" duration-ms="15696">
+      <class name="seleniumGrid.Practice1">
+        <test-method signature="demo()[pri:0, instance:seleniumGrid.Practice1@6283d8b8]" started-at="2023-01-13T16:26:47 IST" name="demo" finished-at="2023-01-13T16:27:03 IST" duration-ms="15637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demo -->
-      </class> <!-- javascriptExecutor.HandlingDisabledElement -->
+      </class> <!-- seleniumGrid.Practice1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
