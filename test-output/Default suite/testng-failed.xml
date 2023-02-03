@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mavenCMDPractice.MavenCMDParametersTest">
+      <class name="grid.GridPractice2Test">
         <methods>
-          <include name="vtigerLoginTest"/>
+          <include name="firstTest"/>
         </methods>
-      </class> <!-- mavenCMDPractice.MavenCMDParametersTest -->
+      </class> <!-- grid.GridPractice2Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
