@@ -19,7 +19,7 @@
 						<version>3.0.0-M7</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>batchExecutiontestng.xml</suiteXmlFile>
+								<suiteXmlFile>maventestng.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -28,7 +28,7 @@
 
 		</profile>
 		
-		<profile>
+	<!--	<profile>
 			<id>GroupExecution</id>
 			<build>
 				<plugins>
@@ -64,7 +64,7 @@
 				</plugins>
 			</build>
 
-		</profile>
+		</profile> -->
 	</profiles>
 
 
